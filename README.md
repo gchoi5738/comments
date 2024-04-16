@@ -86,12 +86,16 @@ npm install
 ```
 
 3. Create a `.env` file in the frontend directory and add the following line:
+```
 REACT_APP_API_URL=http://localhost:8000
+```
 
 This sets the URL of the backend API. Change if you modified where the backend server is running.
 
 4. Start the React development server:
+```
 npm start
+```
 
 The frontend server will run at `http://localhost:3000/`.
 
