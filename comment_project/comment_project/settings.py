@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'comment_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db',
+        'NAME': 'comments',
         'USER': 'db',
         'PASSWORD': 'db',
         'HOST': 'localhost',

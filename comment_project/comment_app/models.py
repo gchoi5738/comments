@@ -7,4 +7,4 @@ class Comment(models.Model):
     author = models.CharField(max_length=100)
     date = models.DateTimeField()
     likes = models.IntegerField()
-    image_url = models.URLField(blank=True)
+    image = models.URLField(blank=True)
