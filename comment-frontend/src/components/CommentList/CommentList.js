@@ -32,6 +32,7 @@ const CommentList = () => {
     try {
       const response = await axios.post(`${API_URL}/comments/`, {
         text: newComment,
+        author: 'Admin',
       });
       setComments([...comments, response.data]);
       setNewComment('');
@@ -54,6 +55,7 @@ const CommentList = () => {
     try {
       const response = await axios.put(`${API_URL}/comments/${editCommentId}/`, {
         text: editCommentText,
+        author: comments.find((comment) => comment.id === editCommentId).author,
       });
       setComments(comments.map((comment) => (comment.id === editCommentId ? response.data : comment)));
       setEditCommentId(null);
