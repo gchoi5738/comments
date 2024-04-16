@@ -14,7 +14,7 @@ Before running the project, make sure you have the following installed:
 
 1. Clone the repository:
 ```
-git clone <https://github.com/gchoi5738/comments>
+git clone https://github.com/gchoi5738/comments
 ```
 
 2. Navigate to the backend directory:
